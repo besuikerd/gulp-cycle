@@ -1,9 +1,11 @@
 require('./globals');
+require('../styles/style.scss');
 
 import Rx from 'rx';
 import Cycle from '@cycle/core';
 import {makeDOMDriver, hJSX} from '@cycle/dom';
 import {makeHTTPDriver} from '@cycle/http';
+
 
 let main = ({DOM}) => {
 
@@ -16,10 +18,6 @@ let main = ({DOM}) => {
     </p>)
 	};
 };
-
-let x = 2;
-
-if(x) { 5; } else { 4; }
 
 
 const drivers = {
